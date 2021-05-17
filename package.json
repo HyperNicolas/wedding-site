@@ -1,5 +1,5 @@
 {
-  "name": "learn-starter",
+  "name": "wedding-site",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -15,7 +15,10 @@
     "null-loader": "4.0.1",
     "react": "17.0.2",
     "react-dom": "17.0.2",
-    "react-icons": "^4.2.0",
+    "react-icons": "4.2.0",
     "styled-components": "5.3.0"
+  },
+  "devDependencies": {
+    "babel-plugin-styled-components": "1.12.0"
   }
 }
