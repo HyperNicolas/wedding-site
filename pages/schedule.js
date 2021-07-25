@@ -53,7 +53,7 @@ const Schedule = () => (
       <div className="cp-c-row cp-c-align-start-center cp-c-wrap">
         <div className="cp-i-100 cp-i-md-50">
           <Title>
-            <div>Welcome Cockatail hour</div>
+            <div>Welcome Cocktail hour</div>
             <Optional>(optional)</Optional>
           </Title>
           <Date>Friday, 9th September 2022</Date>
