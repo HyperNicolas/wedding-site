@@ -17,7 +17,6 @@ const Container = styled.section`
 
   ${media.md} {
     text-align: start;
-    padding-top: 3rem;
   }
 `;
 const StyledWrapper = styled(Wrapper)`
@@ -34,12 +33,12 @@ const links = [
   { route: '/faq', title: 'FAQ' },
 ];
 
-const Footer = ({ variety }) => {
+const Footer = () => {
   const width = useWindowSize();
   const isMobile = width < 768;
   const router = useRouter();
 
-  return (
+  return isMobile ? (
     <Container id="footer">
       <StyledWrapper>
         {width && (
@@ -47,12 +46,14 @@ const Footer = ({ variety }) => {
             {isMobile ? (
               <MobileFooter links={links} router={router} />
             ) : (
-              variety && <DesktopFooter usefulLinks={links} variety={variety} />
+              <div style={{ paddingBottom: '3rem' }} />
             )}
           </div>
         )}
       </StyledWrapper>
     </Container>
+  ) : (
+    <div style={{ paddingBottom: '3rem' }} />
   );
 };
 
