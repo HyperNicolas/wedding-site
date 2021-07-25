@@ -10,4 +10,3 @@ report.20191118.144131.28927.0.001.json
 report.20191209.103408.48352.0.001.json
 .env
 **/public/workbox-*.js
-**/public/sw.js
