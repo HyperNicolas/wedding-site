@@ -4,7 +4,7 @@ import Header from '../header/Header';
 import Footer from '../footer/Footer';
 
 const Container = styled.div`
-  padding-top: 72px;
+  padding-top: 125px;
 `;
 
 const Layout = (props) => (

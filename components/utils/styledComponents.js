@@ -53,33 +53,70 @@ export const useWindowSize = () => {
 };
 
 export const Button = styled.button`
+  text-transform: uppercase;
   position: relative;
   overflow: hidden;
   transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
-  background: ${(props) =>
-    props.inverse ? '#fff' : props.disabled ? '#ffc97e' : props.theme.redColor};
-  border: ${(props) =>
-    props.inverse
-      ? '1px solid #ccc'
-      : props.disabled
-      ? '1px solid #ffc97e'
-      : `1px solid ${props.theme.redColor}`};
-  color: ${(props) => (props.inverse ? 'rgba(0,0,0,.65)' : '#fff')};
+  background: #fff;
+  background: ${(props) => props.theme.secondaryColor};
+  border: none;
+  color: ${(props) => props.theme.textColor};
+  color: #fff;
   padding: 0 3rem;
-  height: 2.5rem;
+  height: 3rem;
+  width: 10rem;
   line-height: 2.4rem;
   text-align: center;
   font-size: 0.9rem;
-  font-weight: ${(props) => !props.inverse && '600'};
   border-radius: 4px;
 
   &:hover {
     cursor: ${(props) => (props.disabled ? 'no-drop' : 'pointer')};
+    opacity: 0.8;
   }
   &:active {
-    background: ${(props) => !props.inverse && '#fdaa36'};
     border-color: ${(props) =>
       props.inverse ? props.theme.mainColor : '#fdaa36'};
     color: ${(props) => props.inverse && props.theme.mainColor};
   }
+`;
+
+export const Title = styled.div`
+  text-align: center;
+  padding: 2rem 0;
+  font-size: 3rem;
+  line-height: 3rem;
+  font-family: Parisienne;
+`;
+export const SmallTitle = styled(Title)`
+  font-size: 2.5rem;
+  padding: 2rem 1rem;
+
+  ${media.lg} {
+    padding: 2rem 0;
+  }
+`;
+
+export const Text = styled.div`
+  font-size: 1rem;
+  line-height: 1.4rem;
+  padding: 0 1rem;
+  padding-bottom: 1rem;
+  text-align: center;
+  max-width: 800px;
+  margin: auto;
+  text-align: justify;
+
+  ${media.sm} {
+    text-align: center;
+  }
+  ${media.lg} {
+    padding: 0;
+    padding-bottom: 1rem;
+  }
+`;
+
+export const Divider = styled.div`
+  border-top: ${(props) => props.theme.thinBorder};
+  margin: 2rem 0;
 `;

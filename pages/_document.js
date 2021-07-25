@@ -36,6 +36,10 @@ export default class MyDocument extends Document {
             rel="stylesheet"
             href="https://unpkg.com/hyperplan@latest/dist/hyperplan.min.css"
           />
+          <link
+            href="https://fonts.googleapis.com/css?family=Raleway|Parisienne&display=swap"
+            rel="stylesheet"
+          />
           {this.props.styleTags}
         </Head>
         <body>

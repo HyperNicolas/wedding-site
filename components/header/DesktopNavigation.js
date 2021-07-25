@@ -14,16 +14,14 @@ const LinkContainer = styled.span`
 `;
 const StyledLink = styled.span`
   font-size: 1.1rem;
-  color: #fff;
+  color: ${(props) => props.theme.textColor};
   padding: 1rem;
-  opacity: ${(props) => (props.active ? '1' : '0.9')};
   font-weight: 600;
   margin-right: 0.5rem;
 
   :hover {
     cursor: pointer;
-    color: #fff;
-    opacity: 1;
+    opacity: 0.8;
   }
 `;
 

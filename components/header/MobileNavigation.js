@@ -1,18 +1,31 @@
 import styled from 'styled-components';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
-import Drawer from '../utils//Drawer';
-import { Button } from '../utils/styledComponents';
-import { TitleCompany, TitleKoi, TitleDrawer } from './Header';
+import Image from 'next/image';
+import Drawer from '../modal/Drawer';
+import { KoiSVG, Button, media } from '../utils/styledComponents';
+import logo from '../../public/logo.png';
+import home from '../../public/home.svg';
+import cal from '../../public/cal.svg';
+import acom from '../../public/bed2.svg';
+import faq from '../../public/faq.svg';
+
+const HeaderContainer = styled.div`
+  background: #fff;
+  padding: 0.5rem;
+  width: 100px;
+  height: 100px;
+  margin: auto;
+`;
 
 const MobileLinkContainer = styled.div`
   padding: 1rem;
   padding-top: 0;
 `;
 const IconContainer = styled.div`
-  margin-right: 1rem;
-  font-size: 1.2rem;
-  margin-top: 0.1rem;
+  width: ${(props) => (props.icon ? '10px' : '35px')};
+  margin-left: ${(props) => props.icon && '0.6rem'};
+  margin-right: ${(props) => (props.icon ? '2rem' : '1rem')};
 `;
 const ButtonContainer = styled.div`
   position: fixed;
@@ -27,17 +40,29 @@ const StyledButton = styled(Button)`
 `;
 const StyledMobileLink = styled('a')`
   color: ${(props) =>
-    props.active == 'true' ? props.theme.mainColor : props.theme.textColor};
-  opacity: ${(props) => (props.active == 'true' ? '1' : '0.75')};
-  background: ${(props) => props.active == 'true' && '#e6f7ff'};
+    props.active == 'true' ? '#186958' : props.theme.textColor};
+  background: ${(props) => props.active == 'true' && '#0080642e'};
   font-size: 1rem;
   padding: 0.8rem 0.5rem;
-  margin: 0.2rem 0;
   border-radius: 6px;
 
+  :first-child {
+    margin-top: 0.4rem;
+  }
   :hover {
     cursor: pointer;
   }
+`;
+
+const KoiIcon = (props) => <KoiSVG {...props} />;
+
+const StyledKoiIcon = styled.svg`
+  width: 20px;
+  height: 20px;
+  margin-right: 1rem;
+  stroke-width: 120px;
+  stroke: ${(props) =>
+    props.active == 'true' ? props.theme.mainColor : ' #565555'};
 `;
 
 const MobileNavigation = ({ links, toggle, visible }) => {
@@ -51,11 +76,10 @@ const MobileNavigation = ({ links, toggle, visible }) => {
       width="100%"
       content={
         <>
-          <TitleDrawer>
-            <TitleKoi>the</TitleKoi>
-            <TitleCompany>KOI</TitleCompany>
-            <TitleKoi>COMPANY</TitleKoi>
-          </TitleDrawer>
+          <HeaderContainer>
+            <Image src={logo} layout="responsive" quality={100} />
+          </HeaderContainer>
+
           <MobileLinkContainer className="cp-c-column" onClick={toggle}>
             {links.map(
               ({ route, title, desktop, icon, routePath }) =>
@@ -71,7 +95,20 @@ const MobileNavigation = ({ links, toggle, visible }) => {
                       className="cp-c-row cp-c-align-start-center"
                     >
                       <>
-                        <IconContainer>{icon}</IconContainer>
+                        <IconContainer icon={icon == 'faq'}>
+                          <Image
+                            src={
+                              icon == 'home'
+                                ? home
+                                : icon == 'cal'
+                                ? cal
+                                : icon == 'acom'
+                                ? acom
+                                : faq
+                            }
+                            layout="responsive"
+                          />
+                        </IconContainer>
                         {title}
                       </>
                     </StyledMobileLink>
@@ -79,7 +116,7 @@ const MobileNavigation = ({ links, toggle, visible }) => {
                 )
             )}
             <ButtonContainer>
-              <StyledButton inverse>Sluiten</StyledButton>
+              <StyledButton inverse>Close</StyledButton>
             </ButtonContainer>
           </MobileLinkContainer>
         </>

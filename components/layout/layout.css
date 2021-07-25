@@ -1,11 +1,11 @@
 body {
   padding: 0;
   margin: 0;
-  font-family: 'Muli', sans-serif !important;
-  background: #f3f5f1 !important;
+  font-family: 'Raleway', sans-serif !important;
   font-size: 0.9rem;
   line-height: 1.2rem;
   color: rgba(0, 0, 0, 0.65);
+  background: #fff;
 }
 ul {
   list-style: initial;

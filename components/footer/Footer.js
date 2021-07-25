@@ -8,6 +8,7 @@ const MobileFooter = dynamic(import('./MobileFooter'));
 const DesktopFooter = dynamic(import('./DesktopFooter'));
 
 const Container = styled.section`
+  margin-top: 2rem;
   text-align: center;
   font-size: 1rem;
   color: #fff;
@@ -25,12 +26,12 @@ const StyledWrapper = styled(Wrapper)`
 
 const links = [
   { route: '/', title: 'Home' },
-  { route: '/japanse-koi?&order=recent', title: 'Japanse koi' },
+  { route: '/schedule', title: 'Schedule' },
   {
-    route: '/dream-koi-collection?&order=recent',
-    title: 'Dream Koi Collection',
+    route: '/accomodations',
+    title: 'Accomodations',
   },
-  { route: '/verkochte-japanse-koi?&order=recent', title: 'Verkochte koi' },
+  { route: '/faq', title: 'FAQ' },
 ];
 
 const Footer = ({ variety }) => {
