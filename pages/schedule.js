@@ -74,7 +74,7 @@ const Schedule = () => (
       <div className="cp-c-row cp-c-align-start-center cp-c-wrap">
         <div className="cp-i-100 cp-i-md-50">
           <Title>
-            <div>Welcome Cocktail hour</div>
+            <div>Welcome Cocktail</div>
             <Optional>(optional)</Optional>
           </Title>
           <Date>Friday, 9th September 2022</Date>
@@ -90,8 +90,9 @@ const Schedule = () => (
             />
           </ImageContainer>
           <StyledText>
-            <div>Quinta da Penalva Calçada Penalva 24</div>
-            <div>2710-494 Sintra</div>
+            <b>
+              <div>To be announced</div>
+            </b>
           </StyledText>
           <StyledText>
             For those that have arrived and would like to meet one another, a
@@ -161,8 +162,9 @@ const Schedule = () => (
             />
           </ImageContainer>
           <StyledText>
-            <div>Quinta da Penalva Calçada Penalva 24</div>
-            <div>2710-494 Sintra</div>
+            <b>
+              <div>To be announced</div>
+            </b>
           </StyledText>
           <StyledText>
             To nurse some sore heads, we will head to the beach to relax and

@@ -25,6 +25,10 @@ const StyledWrapper = styled(Wrapper)`
 
 const links = [
   { route: '/', title: 'Home' },
+  {
+    route: '/venue',
+    title: 'Venue',
+  },
   { route: '/schedule', title: 'Schedule' },
   {
     route: '/accomodations',
