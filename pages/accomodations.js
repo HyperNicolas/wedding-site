@@ -11,6 +11,18 @@ import {
 } from '../components/utils/styledComponents';
 import hotel from '../public/hotel.jpeg';
 
+const ImageBannerContainer = styled.div`
+  position: relative;
+  height: 15rem;
+  margin-bottom: 2rem;
+
+  ${media.sm} {
+    height: 20rem;
+  }
+  ${media.md} {
+    height: 30rem;
+  }
+`;
 const StyledTitle = styled(Title)`
   padding-top: 3rem;
 `;
@@ -76,14 +88,17 @@ const Hotels = [
 ];
 const Accomodations = () => (
   <>
-    <Image
-      src={hotel}
-      layout="responsive"
-      objectFit="cover"
-      quality={100}
-      priority
-      placeholder="blur"
-    />
+    <ImageBannerContainer>
+      <Image
+        src={hotel}
+        layout="fill"
+        objectFit="cover"
+        quality={100}
+        priority
+        placeholder="blur"
+      />
+    </ImageBannerContainer>
+
     <Wrapper>
       <StyledTitle>Accomodations</StyledTitle>
       <Text>
