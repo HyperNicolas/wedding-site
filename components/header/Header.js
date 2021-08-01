@@ -32,8 +32,8 @@ const Container = styled('div')`
 
 const LinkContainer = styled.div`
   margin-top: 0.5rem;
-  width: 100px;
-  height: 100px;
+  width: 75px;
+  height: 75px;
   ${media.lg} {
     margin-left: 2rem;
     :hover {
