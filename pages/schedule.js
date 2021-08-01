@@ -25,6 +25,9 @@ const ImageBannerContainer = styled.div`
   ${media.md} {
     height: 30rem;
   }
+  ${media.lg} {
+    height: 40rem;
+  }
 `;
 const Optional = styled.span`
   font-size: 2rem;

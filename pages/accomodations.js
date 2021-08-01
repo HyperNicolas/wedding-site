@@ -22,6 +22,9 @@ const ImageBannerContainer = styled.div`
   ${media.md} {
     height: 30rem;
   }
+  ${media.lg} {
+    height: 40rem;
+  }
 `;
 const StyledTitle = styled(Title)`
   padding-top: 3rem;
