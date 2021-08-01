@@ -15,9 +15,12 @@ const LinkContainer = styled.span`
 const StyledLink = styled.span`
   font-size: 1.1rem;
   color: ${(props) => props.theme.textColor};
-  padding: 1rem;
+  padding: 0.5rem;
   font-weight: 600;
   margin-right: 0.5rem;
+  border-bottom: ${(props) => props.active && props.theme.thinBorder};
+  border-color: ${(props) => props.theme.textColorLight};
+  padding-bottom: 0.3rem;
 
   :hover {
     cursor: pointer;

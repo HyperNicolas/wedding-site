@@ -82,6 +82,7 @@ const Accomodations = () => (
       objectFit="cover"
       quality={100}
       priority
+      placeholder="blur"
     />
     <Wrapper>
       <StyledTitle>Accomodations</StyledTitle>

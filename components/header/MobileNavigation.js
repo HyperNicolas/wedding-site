@@ -9,6 +9,7 @@ import home from '../../public/home.svg';
 import cal from '../../public/cal.svg';
 import acom from '../../public/bed2.svg';
 import faq from '../../public/faq.svg';
+import church from '../../public/church.svg';
 
 const HeaderContainer = styled.div`
   background: #fff;
@@ -104,7 +105,9 @@ const MobileNavigation = ({ links, toggle, visible }) => {
                                 ? cal
                                 : icon == 'acom'
                                 ? acom
-                                : faq
+                                : icon == 'faq'
+                                ? faq
+                                : church
                             }
                             layout="responsive"
                           />

@@ -45,7 +45,7 @@ const TextContainer = styled.div`
     left: 65%;
   }
   ${media.xl} {
-    top: 70%;
+    top: 68%;
     left: 65%;
     width: 45%;
   }
@@ -113,6 +113,7 @@ const Index = () => (
         objectFit="cover"
         quality={100}
         priority
+        placeholder="blur"
       />
     </Container>
     <Wrapper>

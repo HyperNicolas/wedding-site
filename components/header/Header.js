@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import Image from 'next/image';
 import Link from 'next/link';
 import dynamic from 'next/dynamic';
-import { AiOutlineMenu, AiOutlineHome } from 'react-icons/ai';
+import { AiOutlineMenu } from 'react-icons/ai';
 import { media, useWindowSize } from '../utils/styledComponents';
 import logo from '../../public/logo.png';
 
@@ -67,6 +67,12 @@ export const TitleDrawer = styled.div`
 
 const links = [
   { route: '/', title: 'Home', icon: 'home', routePath: '/' },
+  {
+    route: '/venue',
+    title: 'Venue',
+    icon: 'church',
+    routePath: '/venue',
+  },
   {
     route: '/schedule',
     title: 'Schedule',

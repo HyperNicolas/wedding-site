@@ -44,10 +44,6 @@ const faq = [
     text: 'We have 5 words for you : Pasteis de Nata, Vinho Verde',
   },
   {
-    title: 'What about transportation on the wedding day?',
-    text: "As we will most likely will be occupied with final preparations (or catching some rays), if you have any operational questions on the day or after your arrival to Portugal please don't hesitate contact our lovely wedding planner Doris.",
-  },
-  {
     title: 'Can I bring my fancy camera ?',
     text: 'We would love nothing more than to share souvenirs and beautiful memories. We have a great photography team on hand so do encourage you to sit back and relax!',
   },

@@ -12,9 +12,19 @@ import {
 import cocktail from '../public/cocktail.svg';
 import wedding from '../public/wedding.svg';
 import brunch from '../public/brunch.svg';
+import us from '../public/test.png';
 
-const Section = styled.section`
-  padding-top: 2rem;
+const ImageBannerContainer = styled.div`
+  position: relative;
+  height: 15rem;
+  margin-bottom: 2rem;
+
+  ${media.sm} {
+    height: 20rem;
+  }
+  ${media.md} {
+    height: 30rem;
+  }
 `;
 const Optional = styled.span`
   font-size: 2rem;
@@ -48,7 +58,18 @@ const ButtonContainer = styled.div`
   text-align: center;
 `;
 const Schedule = () => (
-  <Section>
+  <>
+    <ImageBannerContainer>
+      <Image
+        src={us}
+        layout="fill"
+        objectFit="cover"
+        quality={100}
+        priority
+        placeholder="blur"
+      />
+    </ImageBannerContainer>
+
     <Wrapper>
       <div className="cp-c-row cp-c-align-start-center cp-c-wrap">
         <div className="cp-i-100 cp-i-md-50">
@@ -154,7 +175,7 @@ const Schedule = () => (
         </RightContainer>
       </div>
     </Wrapper>
-  </Section>
+  </>
 );
 
 export default Schedule;
