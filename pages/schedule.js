@@ -81,7 +81,7 @@ const Schedule = () => (
             <Optional>(optional)</Optional>
           </Title>
           <Date>Friday, 9th September 2022</Date>
-          <Date>6 PM - 12 PM</Date>
+          <Date>6 PM - 12 AM</Date>
         </div>
         <RightContainer className="cp-i-100 cp-i-md-50">
           <ImageContainer>
@@ -114,7 +114,7 @@ const Schedule = () => (
         <div className="cp-i-100 cp-i-md-50">
           <Title>Wedding Day</Title>
           <Date>Saturday, 10th September 2022</Date>
-          <Date>12 AM - 8 PM</Date>
+          <Date>2 PM - Late</Date>
         </div>
         <RightContainer className="cp-i-100 cp-i-md-50">
           <ImageContainer>
@@ -139,7 +139,12 @@ const Schedule = () => (
             TBD PM Welcome + Ceremony with dinner and dancing to follow
           </StyledText>
           <ButtonContainer>
-            <Button>Map</Button>
+            <a
+              target="_blank"
+              href="https://www.google.com/maps/place/Quinta+da+Penalva/@38.7923833,-9.3829646,18z/data=!3m1!4b1!4m5!3m4!1s0xd1933905f79441d:0x7490b695f1e9e2f8!8m2!3d38.7923812!4d-9.3818703"
+            >
+              <Button>Map</Button>
+            </a>
           </ButtonContainer>
         </RightContainer>
       </div>

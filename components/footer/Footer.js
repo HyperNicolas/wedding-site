@@ -31,8 +31,8 @@ const links = [
   },
   { route: '/schedule', title: 'Schedule' },
   {
-    route: '/accomodations',
-    title: 'Accomodations',
+    route: '/accommodations',
+    title: 'Accommodations',
   },
   { route: '/faq', title: 'FAQ' },
 ];

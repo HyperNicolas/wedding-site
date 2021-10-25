@@ -60,7 +60,6 @@ export const Button = styled.button`
   background: #fff;
   background: ${(props) => props.theme.secondaryColor};
   border: none;
-  color: ${(props) => props.theme.textColor};
   color: #fff;
   padding: 0 3rem;
   height: 3rem;

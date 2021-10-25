@@ -80,10 +80,10 @@ const links = [
     routePath: '/schedule',
   },
   {
-    route: '/accomodations',
-    title: 'Accomodations',
+    route: '/accommodations',
+    title: 'Accommodations',
     icon: 'acom',
-    routePath: '/accomodations',
+    routePath: '/accommodations',
   },
   {
     route: '/faq',

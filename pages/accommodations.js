@@ -68,13 +68,13 @@ const Hotels = [
     title: 'Quinta das Murtas',
     address: 'R. Eduardo Van-Zeller 4, 2710-593 Sintra, Portugal',
     information:
-      'An 18th century palace amid green surroundings with views of the Pena and the Monserrate Palaces. This is about a 20 minute drive to the wedding venue, so please plan transportation (car rental, uber) accordingly!',
+      'An 18th century palace amid green surroundings with views of the Pena and the Monserrate Palaces. This is about 10 minutes walking to the wedding venue',
   },
   {
-    title: 'Penha Longha Resort',
-    address: 'Estrada da Lagoa Azul Linhó, 2714-511 Lisboa, Portugal',
+    title: 'Tivoli Palácio de Seteais',
+    address: 'R. Barbosa du Bocage 8, 2710-517 Sintra, Portugal',
     information:
-      'Penha Longa is an elegant palazzo-style estate located among the rolling hills of the Sintra Cascais Nature Reserve. This is a 5 star resort with several restaurats, spa and golf course',
+      'Much more than a luxury hotel in Sintra, Tivoli Palacio de Seteais is a romantic palace with period architecture that will take you back to the elegance and atmosphere of the XVIII century',
   },
   {
     title: 'Tivoli Sintra Hotel',
@@ -89,7 +89,7 @@ const Hotels = [
       "Although we have not yet seen any of these Airbnb's in person, they look adorable so we started a list for you! Be sure to check distance from the wedding venue and arrange transportation if needed.",
   },
 ];
-const Accomodations = () => (
+const Accommodations = () => (
   <>
     <ImageBannerContainer>
       <Image
@@ -103,9 +103,9 @@ const Accomodations = () => (
     </ImageBannerContainer>
 
     <Wrapper>
-      <StyledTitle>Accomodations</StyledTitle>
+      <StyledTitle>Accommodations</StyledTitle>
       <Text>
-        We will be staying at The Tivoli Palácio de Seteais for the three days
+        We will be staying at The Penha Longa resort for the at least three days
         around the wedding. Transport will be organised from this hotel and we
         would be delighted if you would join us there.
       </Text>
@@ -116,7 +116,7 @@ const Accomodations = () => (
         options can be found.
       </Text>
       <Text>
-        <b>Address: R. Barbosa du Bocage 8, 2710-517 Sintra, Portugal</b>
+        <b>Address: Estrada da Lagoa Azul Linhó, 2714-511 Lisboa, Portugal</b>
       </Text>
       <Divider />
       <div className="cp-c-row cp-c-wrap">
@@ -135,4 +135,4 @@ const Accomodations = () => (
   </>
 );
 
-export default Accomodations;
+export default Accommodations;
