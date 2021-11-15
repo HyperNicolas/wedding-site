@@ -1,6 +1,6 @@
-import React from 'react';
-import styled from 'styled-components';
-import Image from 'next/image';
+import React from "react";
+import styled from "styled-components";
+import Image from "next/image";
 import {
   Wrapper,
   Title,
@@ -8,11 +8,11 @@ import {
   Divider,
   Button,
   media,
-} from '../components/utils/styledComponents';
-import cocktail from '../public/cocktail.svg';
-import wedding from '../public/wedding.svg';
-import brunch from '../public/brunch.svg';
-import us from '../public/test.png';
+} from "../components/utils/styledComponents";
+import cocktail from "../public/cocktail.svg";
+import wedding from "../public/wedding.svg";
+import brunch from "../public/brunch.svg";
+import us from "../public/test.png";
 
 const ImageBannerContainer = styled.div`
   position: relative;
@@ -81,7 +81,7 @@ const Schedule = () => (
             <Optional>(optional)</Optional>
           </Title>
           <Date>Friday, 9th September 2022</Date>
-          <Date>6 PM - 12 AM</Date>
+          <Date>6 PM - 9 PM</Date>
         </div>
         <RightContainer className="cp-i-100 cp-i-md-50">
           <ImageContainer>
@@ -93,9 +93,9 @@ const Schedule = () => (
             />
           </ImageContainer>
           <StyledText>
-            <b>
-              <div>To be announced</div>
-            </b>
+            <div>Quinta da Bella Vista</div>
+            <div>R. Barbosa du Bocage 60</div>
+            <div>2710-517 Sintra</div>
           </StyledText>
           <StyledText>
             For those that have arrived and would like to meet one another, a
