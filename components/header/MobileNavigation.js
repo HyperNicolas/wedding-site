@@ -3,7 +3,7 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 import Image from "next/image";
 import Drawer from "../modal/Drawer";
-import { KoiSVG, Button, media } from "../utils/styledComponents";
+import { Button } from "../utils/styledComponents";
 import logo from "../../public/logo.png";
 import home from "../../public/home.svg";
 import cal from "../../public/cal.svg";
@@ -55,8 +55,6 @@ const StyledMobileLink = styled("a")`
     cursor: pointer;
   }
 `;
-
-const KoiIcon = (props) => <KoiSVG {...props} />;
 
 const StyledKoiIcon = styled.svg`
   width: 20px;

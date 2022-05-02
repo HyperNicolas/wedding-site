@@ -68,6 +68,12 @@ export const TitleDrawer = styled.div`
 const links = [
   { route: "/", title: "Home", icon: "home", routePath: "/" },
   {
+    route: "/rsvp",
+    title: "RSVP",
+    icon: "rsvp",
+    routePath: "/rsvp",
+  },
+  {
     route: "/venue",
     title: "Venue",
     icon: "church",
@@ -90,12 +96,6 @@ const links = [
     title: "FAQ",
     icon: "faq",
     routePath: "/faq",
-  },
-  {
-    route: "/rsvp",
-    title: "RSVP",
-    icon: "rsvp",
-    routePath: "/rsvp",
   },
 ];
 
