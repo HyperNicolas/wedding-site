@@ -1,15 +1,16 @@
-import styled from 'styled-components';
-import Link from 'next/link';
-import { useRouter } from 'next/router';
-import Image from 'next/image';
-import Drawer from '../modal/Drawer';
-import { KoiSVG, Button, media } from '../utils/styledComponents';
-import logo from '../../public/logo.png';
-import home from '../../public/home.svg';
-import cal from '../../public/cal.svg';
-import acom from '../../public/bed2.svg';
-import faq from '../../public/faq.svg';
-import church from '../../public/church.svg';
+import styled from "styled-components";
+import Link from "next/link";
+import { useRouter } from "next/router";
+import Image from "next/image";
+import Drawer from "../modal/Drawer";
+import { KoiSVG, Button, media } from "../utils/styledComponents";
+import logo from "../../public/logo.png";
+import home from "../../public/home.svg";
+import cal from "../../public/cal.svg";
+import acom from "../../public/bed2.svg";
+import faq from "../../public/faq.svg";
+import church from "../../public/church.svg";
+import rsvp from "../../public/rsvp.svg";
 
 const HeaderContainer = styled.div`
   background: #fff;
@@ -24,9 +25,9 @@ const MobileLinkContainer = styled.div`
   padding-top: 0;
 `;
 const IconContainer = styled.div`
-  width: ${(props) => (props.icon ? '10px' : '35px')};
-  margin-left: ${(props) => props.icon && '0.6rem'};
-  margin-right: ${(props) => (props.icon ? '2rem' : '1rem')};
+  width: ${(props) => (props.icon ? "10px" : "35px")};
+  margin-left: ${(props) => props.icon && "0.6rem"};
+  margin-right: ${(props) => (props.icon ? "2rem" : "1rem")};
 `;
 const ButtonContainer = styled.div`
   position: fixed;
@@ -39,10 +40,10 @@ const StyledButton = styled(Button)`
   height: 3rem;
   line-height: 3rem;
 `;
-const StyledMobileLink = styled('a')`
+const StyledMobileLink = styled("a")`
   color: ${(props) =>
-    props.active == 'true' ? '#186958' : props.theme.textColor};
-  background: ${(props) => props.active == 'true' && '#0080642e'};
+    props.active == "true" ? "#186958" : props.theme.textColor};
+  background: ${(props) => props.active == "true" && "#0080642e"};
   font-size: 1rem;
   padding: 0.8rem 0.5rem;
   border-radius: 6px;
@@ -63,7 +64,7 @@ const StyledKoiIcon = styled.svg`
   margin-right: 1rem;
   stroke-width: 120px;
   stroke: ${(props) =>
-    props.active == 'true' ? props.theme.mainColor : ' #565555'};
+    props.active == "true" ? props.theme.mainColor : " #565555"};
 `;
 
 const MobileNavigation = ({ links, toggle, visible }) => {
@@ -89,25 +90,27 @@ const MobileNavigation = ({ links, toggle, visible }) => {
                     <StyledMobileLink
                       aria-label={title}
                       href={route}
-                      active={(route == '/'
-                        ? router.asPath == '/'
+                      active={(route == "/"
+                        ? router.asPath == "/"
                         : router.asPath.includes(routePath)
                       ).toString()}
                       className="cp-c-row cp-c-align-start-center"
                     >
                       <>
-                        <IconContainer icon={icon == 'faq'}>
+                        <IconContainer icon={icon == "faq"}>
                           <Image
                             src={
-                              icon == 'home'
+                              icon == "home"
                                 ? home
-                                : icon == 'cal'
+                                : icon == "cal"
                                 ? cal
-                                : icon == 'acom'
+                                : icon == "acom"
                                 ? acom
-                                : icon == 'faq'
+                                : icon == "faq"
                                 ? faq
-                                : church
+                                : icon == "church"
+                                ? church
+                                : rsvp
                             }
                             layout="responsive"
                           />

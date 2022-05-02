@@ -1,16 +1,16 @@
-import React, { useState } from 'react';
-import styled from 'styled-components';
-import Image from 'next/image';
-import Link from 'next/link';
-import dynamic from 'next/dynamic';
-import { AiOutlineMenu } from 'react-icons/ai';
-import { media, useWindowSize } from '../utils/styledComponents';
-import logo from '../../public/logo.png';
+import React, { useState } from "react";
+import styled from "styled-components";
+import Image from "next/image";
+import Link from "next/link";
+import dynamic from "next/dynamic";
+import { AiOutlineMenu } from "react-icons/ai";
+import { media, useWindowSize } from "../utils/styledComponents";
+import logo from "../../public/logo.png";
 
-const DesktopNavigation = dynamic(import('./DesktopNavigation'));
-const MobileNavigation = dynamic(import('./MobileNavigation'));
+const DesktopNavigation = dynamic(import("./DesktopNavigation"));
+const MobileNavigation = dynamic(import("./MobileNavigation"));
 
-const Container = styled('div')`
+const Container = styled("div")`
   top: 0;
   background: #fff;
   padding: 0.5rem;
@@ -59,37 +59,43 @@ export const TitleDrawer = styled.div`
   background: ${(props) => props.theme.secondaryColor};
   background-repeat-x: repeat;
   background-size: cover;
-  padding: ${(props) => (props.padding ? props.padding : '1rem 1.5rem')};
+  padding: ${(props) => (props.padding ? props.padding : "1rem 1.5rem")};
   ${media.md} {
     border-radius: 4px 4px 0 0;
   }
 `;
 
 const links = [
-  { route: '/', title: 'Home', icon: 'home', routePath: '/' },
+  { route: "/", title: "Home", icon: "home", routePath: "/" },
   {
-    route: '/venue',
-    title: 'Venue',
-    icon: 'church',
-    routePath: '/venue',
+    route: "/venue",
+    title: "Venue",
+    icon: "church",
+    routePath: "/venue",
   },
   {
-    route: '/schedule',
-    title: 'Schedule',
-    icon: 'cal',
-    routePath: '/schedule',
+    route: "/schedule",
+    title: "Schedule",
+    icon: "cal",
+    routePath: "/schedule",
   },
   {
-    route: '/accommodations',
-    title: 'Accommodations',
-    icon: 'acom',
-    routePath: '/accommodations',
+    route: "/accommodations",
+    title: "Accommodations",
+    icon: "acom",
+    routePath: "/accommodations",
   },
   {
-    route: '/faq',
-    title: 'FAQ',
-    icon: 'faq',
-    routePath: '/faq',
+    route: "/faq",
+    title: "FAQ",
+    icon: "faq",
+    routePath: "/faq",
+  },
+  {
+    route: "/rsvp",
+    title: "RSVP",
+    icon: "rsvp",
+    routePath: "/rsvp",
   },
 ];
 
