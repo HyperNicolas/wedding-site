@@ -1,14 +1,14 @@
-import React from 'react';
-import styled from 'styled-components';
-import Image from 'next/image';
+import React from "react";
+import styled from "styled-components";
+import Image from "next/image";
 import {
   Wrapper,
   SmallTitle,
   Text,
   Divider,
-} from '../components/utils/styledComponents';
-import venue from '../public/venue.jpeg';
-import us from '../public/test4.png';
+} from "../components/utils/styledComponents";
+import venue from "../public/venue.jpeg";
+import us from "../public/test4.jpg";
 
 const StyledTitle = styled(SmallTitle)`
   text-align: left;

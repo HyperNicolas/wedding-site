@@ -12,18 +12,18 @@ import {
 import cocktail from "../public/cocktail.svg";
 import wedding from "../public/wedding.svg";
 import brunch from "../public/brunch.svg";
-import us from "../public/test.png";
+import us from "../public/mimi.png";
 
 const ImageBannerContainer = styled.div`
   position: relative;
-  height: 15rem;
+  height: 25rem;
   margin-bottom: 2rem;
 
   ${media.sm} {
-    height: 20rem;
+    height: 30rem;
   }
   ${media.md} {
-    height: 30rem;
+    height: 35rem;
   }
   ${media.lg} {
     height: 40rem;

@@ -1,14 +1,15 @@
-import React from 'react';
-import styled from 'styled-components';
-import Image from 'next/image';
+import React from "react";
+import styled from "styled-components";
+import Image from "next/image";
 import {
   Wrapper,
   media,
   Title,
   Text,
   Divider,
-} from '../components/utils/styledComponents';
-import flowers from '../public/flowers1.png';
+} from "../components/utils/styledComponents";
+import flowers from "../public/flowers1.png";
+import us from "../public/maddy.jpg";
 
 const Container = styled.div`
   position: relative;
@@ -20,6 +21,9 @@ const Container = styled.div`
   ${media.lg} {
     padding-bottom: 0;
   }
+`;
+const DividerTwo = styled.div`
+  padding: 1rem;
 `;
 const TextContainer = styled.div`
   position: absolute;
@@ -133,6 +137,8 @@ const Index = () => (
         to share this day with you and look forward to dancing the night away
         with all of our favorite people!
       </Text>
+      <DividerTwo />
+      <Image src={us} layout="responsive" objectFit="cover" quality={100} />
     </Wrapper>
   </>
 );

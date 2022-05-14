@@ -1,11 +1,11 @@
-import React from 'react';
-import styled from 'styled-components';
-import dynamic from 'next/dynamic';
-import { useRouter } from 'next/router';
-import { Wrapper, media, useWindowSize } from '../utils/styledComponents';
+import React from "react";
+import styled from "styled-components";
+import dynamic from "next/dynamic";
+import { useRouter } from "next/router";
+import { Wrapper, media, useWindowSize } from "../utils/styledComponents";
 
-const MobileFooter = dynamic(import('./MobileFooter'));
-const DesktopFooter = dynamic(import('./DesktopFooter'));
+const MobileFooter = dynamic(import("./MobileFooter"));
+const DesktopFooter = dynamic(import("./DesktopFooter"));
 
 const Container = styled.section`
   margin-top: 2rem;
@@ -24,17 +24,17 @@ const StyledWrapper = styled(Wrapper)`
 `;
 
 const links = [
-  { route: '/', title: 'Home' },
+  { route: "/", title: "Home" },
   {
-    route: '/venue',
-    title: 'Venue',
+    route: "/venue",
+    title: "Venue",
   },
-  { route: '/schedule', title: 'Schedule' },
+  { route: "/schedule", title: "Schedule" },
   {
-    route: '/accommodations',
-    title: 'Accommodations',
+    route: "/accommodations",
+    title: "Accommodations",
   },
-  { route: '/faq', title: 'FAQ' },
+  { route: "/faq", title: "FAQ" },
 ];
 
 const Footer = () => {
@@ -50,14 +50,14 @@ const Footer = () => {
             {isMobile ? (
               <MobileFooter links={links} router={router} />
             ) : (
-              <div style={{ paddingBottom: '3rem' }} />
+              <div style={{ paddingBottom: "0" }} />
             )}
           </div>
         )}
       </StyledWrapper>
     </Container>
   ) : (
-    <div style={{ paddingBottom: '3rem' }} />
+    <div style={{ paddingBottom: "0" }} />
   );
 };
 
