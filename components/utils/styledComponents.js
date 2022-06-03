@@ -1,17 +1,17 @@
-import { useState, useEffect } from 'react';
-import styled from 'styled-components';
+import { useState, useEffect } from "react";
+import styled from "styled-components";
 
 export const theme = {
-  textColor: '#565656',
-  textColorLight: '#8c8a8a',
-  mainColor: '#1955a4',
-  secondaryColor: '#9CAAA7',
-  antdColor: '#1890ff',
-  invalidColor: '#ff9b20',
-  skeletonColor: '#e8e8e8',
-  thinBorder: '1px solid #dcdcdc',
-  redColor: '#ff9500',
-  borderRadius: '4px',
+  textColor: "#565656",
+  textColorLight: "#8c8a8a",
+  mainColor: "#1955a4",
+  secondaryColor: "#9CAAA7",
+  antdColor: "#1890ff",
+  invalidColor: "#ff9b20",
+  skeletonColor: "#e8e8e8",
+  thinBorder: "1px solid #dcdcdc",
+  redColor: "#ff9500",
+  borderRadius: "4px",
 };
 
 export const sizes = {
@@ -28,8 +28,8 @@ export const media = Object.keys(sizes).reduce((acc, label) => {
   return acc;
 }, {});
 
-export const Wrapper = styled('div')`
-  padding: ${(props) => props.padding && '0.5rem'};
+export const Wrapper = styled("div")`
+  padding: ${(props) => props.padding && "0.5rem"};
   box-sizing: border-box;
   max-width: 1120px;
   margin: 0 auto;
@@ -43,11 +43,11 @@ export const useWindowSize = () => {
       setWindowSize(window.innerWidth);
     }
 
-    window.addEventListener('resize', handleResize);
+    window.addEventListener("resize", handleResize);
 
     handleResize();
 
-    return () => window.removeEventListener('resize', handleResize);
+    return () => window.removeEventListener("resize", handleResize);
   }, []);
   return width;
 };
@@ -63,19 +63,19 @@ export const Button = styled.button`
   color: #fff;
   padding: 0 3rem;
   height: 3rem;
-  width: 10rem;
+  width: 12rem;
   line-height: 2.4rem;
   text-align: center;
   font-size: 0.9rem;
   border-radius: 4px;
 
   &:hover {
-    cursor: ${(props) => (props.disabled ? 'no-drop' : 'pointer')};
+    cursor: ${(props) => (props.disabled ? "no-drop" : "pointer")};
     opacity: 0.8;
   }
   &:active {
     border-color: ${(props) =>
-      props.inverse ? props.theme.mainColor : '#fdaa36'};
+      props.inverse ? props.theme.mainColor : "#fdaa36"};
     color: ${(props) => props.inverse && props.theme.mainColor};
   }
 `;

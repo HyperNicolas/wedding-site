@@ -7,7 +7,7 @@ import {
   Text,
   Divider,
 } from "../components/utils/styledComponents";
-import venue from "../public/venue.jpeg";
+import venue from "../public/venueDrawing.png";
 import us from "../public/test4.jpg";
 
 const StyledTitle = styled(SmallTitle)`
@@ -22,19 +22,11 @@ const StyledText = styled(Text)`
 const Venue = () => (
   <Wrapper>
     <div className="cp-c-row cp-c-align-end-center cp-c-wrap">
-      <div className="cp-i-100 cp-i-md-40">
+      <div className="cp-i-100 cp-i-md-60">
         <StyledTitle>The venue</StyledTitle>
         <StyledText>
           The venue Quinta da Penalva is full of greenery and has an undeniable
           charm.
-        </StyledText>
-        <StyledText>
-          Quinta da Penalva is a guest house, located just outside the village
-          of Sintra. Unlike many other Quinta or villas, Penalva is a private
-          estate with lavish greenery in Sintra’s spirit, with several different
-          natural areas throughout the estate. The villa itself had this
-          beautiful green wall, two huge indoor and outdoor pools and a small
-          bar house.
         </StyledText>
         <StyledText>
           Nestled in the heart of Sintra, Quinta de Penalva is a private villa
@@ -44,8 +36,16 @@ const Venue = () => (
           who continue to spend seasons sometimes in Sintra, and sometimes in
           Brazil.
         </StyledText>
+        <StyledText>
+          The story goes that the tennis court was built for Queen Dona Amelia
+          for practicing her favorite sport, when she spent the summer months
+          with her husband, King D. Carlos I, in the Pena Palace. It was at the
+          beginning of the 20th century that the renowned architect Raul Lino
+          (1879-1974) was called upon to intervene, making the loft, gazebo and
+          tea house next to the tennis court.
+        </StyledText>
       </div>
-      <div className="cp-i-100 cp-i-md-60">
+      <div className="cp-i-100 cp-i-md-40">
         <Image
           src={venue}
           layout="responsive"
@@ -55,14 +55,6 @@ const Venue = () => (
         />
       </div>
     </div>
-    <StyledText>
-      The story goes that the tennis court was built for Queen Dona Amelia for
-      practicing her favorite sport, when she spent the summer months with her
-      husband, King D. Carlos I, in the Pena Palace. It was at the beginning of
-      the 20th century that the renowned architect Raul Lino (1879-1974) was
-      called upon to intervene, making the loft, gazebo and tea house next to
-      the tennis court.
-    </StyledText>
     <StyledText>
       In the house itself, there is a very personal decoration filled with
       objects that are part of the family history, in a typical old Portuguese

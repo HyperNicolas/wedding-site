@@ -132,11 +132,6 @@ const Index = () => (
         all of the important details with you in the lead up to our wedding.
       </Text>
       <Text>So have fun, take a look around and don’t forget to RSVP!</Text>
-      <Text>
-        Finally – thank you for your ongoing love and support. We are so excited
-        to share this day with you and look forward to dancing the night away
-        with all of our favorite people!
-      </Text>
       <DividerTwo />
       <Image src={us} layout="responsive" objectFit="cover" quality={100} />
     </Wrapper>

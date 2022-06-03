@@ -98,12 +98,17 @@ const Schedule = () => (
             <div>2710-517 Sintra</div>
           </StyledText>
           <StyledText>
-            For those that have arrived and would like to meet one another, a
-            casual cocktail hour - completely optional (feel free to explore
-            Portugal or rest up for the big day if needed)!
+            For those that have arrived and would like to meet one another, join
+            us for some Pimms and light bites (feel free to explore Portugal or
+            rest up for the big day if needed)!
           </StyledText>
           <ButtonContainer>
-            <Button>Map</Button>
+            <a
+              target="_blank"
+              href="https://www.google.com/maps/dir//Quinta+da+Bella+Vista+R.+Barbosa+du+Bocage+60+2710-517+Sintra/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0xd1edba9e037d9e9:0x93c7cf1b1c582f48?sa=X&ved=2ahUKEwiY1s6b1ZD4AhXR3KQKHe3JBgYQ9Rd6BAhREAQ"
+            >
+              <Button>Directions</Button>
+            </a>
           </ButtonContainer>
         </RightContainer>
       </div>
@@ -130,20 +135,20 @@ const Schedule = () => (
             <div>2710-494 Sintra</div>
           </StyledText>
           <StyledText>
-            Cocktail Attire (“garden party chic”): wear anything from gowns to
-            cocktail dresses, and suits to jackets and slacks. Have fun with it
-            – we will be!
+            Cocktail Attire (“garden party chic”): For the gents suits (no
+            beige) and ties are not mandatory. For the girls anything from gowns
+            to cocktail dresses.
           </StyledText>
 
           <StyledText>
-            TBD PM Welcome + Ceremony with dinner and dancing to follow
+            2 PM Welcome + Ceremony with dinner and dancing to follow
           </StyledText>
           <ButtonContainer>
             <a
               target="_blank"
               href="https://www.google.com/maps/place/Quinta+da+Penalva/@38.7923833,-9.3829646,18z/data=!3m1!4b1!4m5!3m4!1s0xd1933905f79441d:0x7490b695f1e9e2f8!8m2!3d38.7923812!4d-9.3818703"
             >
-              <Button>Map</Button>
+              <Button>Directions</Button>
             </a>
           </ButtonContainer>
         </RightContainer>
@@ -179,8 +184,9 @@ const Schedule = () => (
             enjoy our first day as a married couple. We would love for you to
             join us if you fancy dropping by to hang by Lisbons coast. (No host)
           </StyledText>
+          <StyledText>Let us know if you would want to join.</StyledText>
           <ButtonContainer>
-            <Button>Map</Button>
+            <Button>Directions</Button>
           </ButtonContainer>
         </RightContainer>
       </div>
