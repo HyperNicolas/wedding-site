@@ -44,8 +44,12 @@ const faq = [
     text: "We have 5 words for you : Pasteis de Nata, Vinho Verde",
   },
   {
-    title: "Can I bring my fancy camera ?",
+    title: "Can I bring my fancy camera?",
     text: "We would love nothing more than to share souvenirs and beautiful memories. We have a great photography/videography team on hand so do encourage you to sit back and relax!",
+  },
+  {
+    title: "Do we have a gift registry?",
+    text: "Your presence at our wedding is gift enough, but, should you wish to give a gift as well, a small present or a contribution to put towards our honeymoon would be greatly appreciated.",
   },
 ];
 
