@@ -60,6 +60,9 @@ const ButtonContainer = styled.div`
   width: 100%;
   text-align: center;
 `;
+const ButtonExtra = styled(Button)`
+  background: #4da0ff;
+`;
 const Schedule = () => (
   <>
     <ImageBannerContainer>
@@ -119,7 +122,7 @@ const Schedule = () => (
         <div className="cp-i-100 cp-i-md-50">
           <Title>Wedding Day</Title>
           <Date>Saturday, 10th September 2022</Date>
-          <Date>2 PM - Late</Date>
+          <Date>2:30 PM - Late</Date>
         </div>
         <RightContainer className="cp-i-100 cp-i-md-50">
           <ImageContainer>
@@ -141,7 +144,8 @@ const Schedule = () => (
           </StyledText>
 
           <StyledText>
-            2 PM Welcome + Ceremony with dinner and dancing to follow
+            2:30 PM Welcome (latest 2:45 PM) + Ceremony with dinner and dancing
+            to follow
           </StyledText>
           <ButtonContainer>
             <a
@@ -151,11 +155,17 @@ const Schedule = () => (
               <Button>Directions</Button>
             </a>
           </ButtonContainer>
+          <ButtonContainer>
+            <a target="_blank" href="/schedule.pdf">
+              <ButtonExtra>Schedule</ButtonExtra>
+            </a>
+          </ButtonContainer>
         </RightContainer>
       </div>
 
       <Divider />
 
+      <div className="cp-c-row cp-c-align-start-center cp-c-wrap"></div>
       <div className="cp-c-row cp-c-align-start-center cp-c-wrap">
         <div className="cp-i-100 cp-i-md-50">
           <Title>
